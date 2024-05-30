@@ -39,10 +39,14 @@ This repository contains a collection of projects and examples focused on embedd
    - This code snippet demonstrates how to control an LED using a push-button switch in an embedded system.
    - It typically involves configuring GPIO (General Purpose Input/Output) pins on a microcontroller to read the state of the push-button and control the LED accordingly.
    - This example serves as a fundamental introduction to input and output operations in embedded programming and is commonly used in projects involving user interaction.
+   - [Led on and off using Push button.pdf](https://github.com/venkat-teja-17/Embedded-Programming-Projects/files/15505635/Led.on.and.off.using.Push.button.pdf)
+
 
 7. # **A-code-to-BLINK-a-LED**:
    - This code snippet implements a simple program to blink an LED on and off at a fixed rate.
    - It involves toggling the state of a GPIO pin connected to the LED at regular intervals using delay functions or hardware timers.
    - Blinking LEDs are often used as visual indicators in embedded systems and are a common starting point for beginners learning embedded programming concepts.
+   - [LED blinking.pdf](https://github.com/venkat-teja-17/Embedded-Programming-Projects/files/15505637/LED.blinking.pdf)
+
 
 These explanations provide an overview of the functionality and relevance of each code snippet within the context of embedded programming projects. They cover a range of topics commonly encountered in embedded systems development, from networking tasks to basic input/output operations and LED control.
