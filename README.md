@@ -16,7 +16,7 @@ This repository contains a collection of projects and examples focused on embedd
    - It utilizes bitwise operations and string parsing to extract the individual octets of the IP address and pack them into a single integer.
    - The resulting packed IP address can be useful for various networking tasks, such as IP address manipulation and configuration in embedded systems.
 
-2.  # **A-code-to-Count-no-of-bits-in-a-given-number**:
+2.   # **A-code-to-Count-no-of-bits-in-a-given-number**:
    - This code snippet counts the number of set bits (ones) in the binary representation of a given integer.
    - It employs bitwise operations to iterate through each bit of the integer and count the set bits.
    - The functionality provided by this code is often used in low-level programming tasks, cryptography, and algorithm design where efficient bit manipulation is required.
