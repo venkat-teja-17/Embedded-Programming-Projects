@@ -9,13 +9,14 @@ This repository contains a collection of projects and examples focused on embedd
 6. A-code-for-Turning-an-LED-on-and-off-using-a-push-button.
 7. A-code-to-BLINK-a-LED.
 
+   
 
 1. # **A-code-to-find-the-IP-address-into-32-bit-Unsigned-Integer**:
    - This code snippet converts an IP address in dotted-decimal notation (e.g., "172.22.208.98") into a 32-bit unsigned integer, commonly used in networking applications.
    - It utilizes bitwise operations and string parsing to extract the individual octets of the IP address and pack them into a single integer.
    - The resulting packed IP address can be useful for various networking tasks, such as IP address manipulation and configuration in embedded systems.
 
-2. # **A-code-to-Count-no-of-bits-in-a-given-number**:
+2.  # **A-code-to-Count-no-of-bits-in-a-given-number**:
    - This code snippet counts the number of set bits (ones) in the binary representation of a given integer.
    - It employs bitwise operations to iterate through each bit of the integer and count the set bits.
    - The functionality provided by this code is often used in low-level programming tasks, cryptography, and algorithm design where efficient bit manipulation is required.
@@ -38,7 +39,7 @@ This repository contains a collection of projects and examples focused on embedd
 6. # **A-code-for-Turning-an-LED-on-and-off-using-a-push-button**:
    - This code snippet demonstrates how to control an LED using a push-button switch in an embedded system.
    - It typically involves configuring GPIO (General Purpose Input/Output) pins on a microcontroller to read the state of the push-button and control the LED accordingly.
-   - This example serves as a fundamental introduction to input and output operations in embedded programming and is commonly used in projects involving user interaction.
+   - This example is a fundamental introduction to input and output operations in embedded programming and is commonly used in user interaction projects.
    - [Led on and off using Push button.pdf](https://github.com/venkat-teja-17/Embedded-Programming-Projects/files/15505635/Led.on.and.off.using.Push.button.pdf)
 
 
@@ -49,4 +50,4 @@ This repository contains a collection of projects and examples focused on embedd
    - [LED blinking.pdf](https://github.com/venkat-teja-17/Embedded-Programming-Projects/files/15505637/LED.blinking.pdf)
 
 
-These explanations provide an overview of the functionality and relevance of each code snippet within the context of embedded programming projects. They cover a range of topics commonly encountered in embedded systems development, from networking tasks to basic input/output operations and LED control.
+These explanations provide an overview of the functionality and relevance of each code snippet within the context of embedded programming projects. They cover various topics commonly encountered in embedded systems development, from networking tasks to basic input/output operations and LED control.
