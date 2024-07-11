@@ -9,6 +9,8 @@ This repository contains a collection of projects and examples focused on embedd
 6. A-code-for-Turning-an-LED-on-and-off-using-a-push-button.
 7. A-code-to-BLINK-a-LED.
 8. A-code-for-Bit-Manipulation-Program.
+9. A-code-to-Set-Program.
+10. A-code-to-Reset-Program.
 
    
 
@@ -53,6 +55,12 @@ This repository contains a collection of projects and examples focused on embedd
 
 # 8. #**A-code-for-Bit-Manipulation-Program**:
    -
+   
+# 9. #**A-code-to-Set-Program**:
+   -
+   
+# 10. #**A-code-to-Reset-Program**:
+      -
 
 
 These explanations provide an overview of the functionality and relevance of each code snippet within the context of embedded programming projects. They cover various topics commonly encountered in embedded systems development, from networking tasks to basic input/output operations and LED control.
