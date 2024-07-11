@@ -1,20 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-void binaryToMac(const char* binary) {
-    unsigned int bytes[6] = {0};
-    for (int i = 0; i < 48; ++i) {
-        bytes[i / 8] = (bytes[i / 8] << 1) | (binary[i] - '0');
-    }
-    printf("MAC Address: %02X:%02X:%02X:%02X:%02X:%02X\n",
-           bytes[0], bytes[1], bytes[2], bytes[3], bytes[4], bytes[5]);
-}
+#define BYTE1(ip) ((ip) >> 24) & 0xFF
+#define BYTE2(ip) ((ip) >> 16) & 0xFF
+#define BYTE3(ip) ((ip) >> 8) & 0xFF
+#define BYTE4(ip) (ip) & 0xFF
 
-int main() {
-    char binary_pattern[49];
-    printf("Example of a 48-bit binary pattern: 101010101011101111001100110111011110111111111111\n");
-    printf("Enter a 48-bit binary pattern: ");
-    scanf("%48s", binary_pattern);
-    binaryToMac(binary_pattern);
+int main() 
+{
+    unsigned int ip;
+    printf("Enter the packed 32-bit unsigned integer (IP address): ");
+    scanf("%u", &ip);
+    printf("The IP address is: %u.%u.%u.%u\n", BYTE1(ip), BYTE2(ip), BYTE3(ip), BYTE4(ip));
     return 0;
 }
