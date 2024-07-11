@@ -1,20 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-void binaryToMac(const char* binary) {
-    unsigned int bytes[6] = {0};
-    for (int i = 0; i < 48; ++i) {
-        bytes[i / 8] = (bytes[i / 8] << 1) | (binary[i] - '0');
+void macToBinary(const char* mac) {
+    unsigned int bytes[6];
+    char binary[49];
+    binary[48] = '\0';
+    scanf(mac, "%x:%x:%x:%x:%x:%x", &bytes[0], &bytes[1], &bytes[2], &bytes[3], &bytes[4], &bytes[5]);
+    for (int i = 0; i < 6; ++i) {
+        for (int bit = 0; bit < 8; ++bit) {
+            binary[i * 8 + (7 - bit)] = (bytes[i] & (1 << bit)) ? '1' : '0';
+        }
     }
-    printf("MAC Address: %02X:%02X:%02X:%02X:%02X:%02X\n",
-           bytes[0], bytes[1], bytes[2], bytes[3], bytes[4], bytes[5]);
+    printf("Binary representation: %s\n", binary);
 }
 
 int main() {
-    char binary_pattern[49];
-    printf("Example of a 48-bit binary pattern: 101010101011101111001100110111011110111111111111\n");
-    printf("Enter a 48-bit binary pattern: ");
-    scanf("%48s", binary_pattern);
-    binaryToMac(binary_pattern);
+    char mac_address[18];
+    printf("Example of a MAC address: 2C-3B-70-58-1E-0B\n");
+    printf("Enter a MAC address: ");
+    scanf("%17s", mac_address);
+    macToBinary(mac_address);
     return 0;
 }
